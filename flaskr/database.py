@@ -2,20 +2,18 @@ import csv
 from csv  import reader
 import json 
 from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
 
 
-client = MongoClient("localhost",27017)
+load_dotenv("flaskr\.env")
+url= os.environ["MONGODB_URI"]
+client = MongoClient(url)
 
 db = client.Desafio
 collectionEmpresas = db.Empresas
 collectionSocios = db.Sócios
 collectionsEstabelecimentos = db.Estabelecimentos
-
-
-login = {
-    "name" :"name",
-}
-
 
 
 with open("flaskr\Socios0\Socios.csv",newline="\n",encoding="utf8") as file:
