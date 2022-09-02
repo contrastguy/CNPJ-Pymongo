@@ -12,4 +12,4 @@ Objective  --->
   
 ### Used Technolgies 
 
-  Python - Flask -  Pymongo -  MongoDB (Atlas) - ElasticSearch
+  Python - Flask -  Pymongo -  MongoDB (Atlas) - ElasticSearch - venv - dotenv
